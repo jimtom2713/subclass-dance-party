@@ -2,7 +2,7 @@ var BenderDancer = function(top, left, timeBetweenSteps){
 
   Dancer.call(this, top, left, timeBetweenSteps);
   this.styleSettings['border-radius'] = 0;
-  this.$node = $('<span class = "dancer"><img src="lib/img/Bender.png"></span>')
+  this.$node = $('<span class = "dancer"><img src="lib/img/Bender_dancing_animated.gif"></span>')
   this.setPosition(top, left);
   this.direction = 'up';
   this.squareSize = 100;

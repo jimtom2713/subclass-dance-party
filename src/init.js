@@ -41,5 +41,16 @@ $(document).ready(function(){
       position += increment;
     }
   });
+  $(".zoidbergParty").on("click", function(event){
+    for (var i = 0; i < 100; i++){
+      var dancer = new ZoidbergDancer(
+      $("body").height() * Math.random() + 32,
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(dancer.$node);
+    dancers.push(dancer); 
+    }
+  })
 });
 

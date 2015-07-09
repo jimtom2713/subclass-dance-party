@@ -2,7 +2,9 @@ body, html{
   height:100%;
 }
 html{
-  background: url(lib/img/greenShip.jpg) no-repeat center center fixed;
+  /*background: url(lib/img/ZapKaraoke.gif) no-repeat center center fixed;*/
+  background: url(lib/img/crash.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 body{
   margin: 0px;
@@ -15,6 +17,7 @@ body, a:link, a:visited, a:active{
 .title, .addDancerButton, .lineUpButton{
   padding:5px 12px;
   float:right;
+  margin: 5px;
 }
 .topbar{
   height:32px;
@@ -22,12 +25,10 @@ body, a:link, a:visited, a:active{
 }
 .title{
   background-color: #777;
+  border-radius: 5px;
 }
 .dancer{
 /*  border:10px solid red;
   border-radius:10px;*/
   position:absolute;
 }
-
-/*http://vignette1.wikia.nocookie.net/en.futurama/images/e/e9/Zapp_Brannigan.png/revision/latest?cb=20101013084300
-https://upload.wikimedia.org/wikipedia/en/1/15/Captain_Zapp_Brannigan.png*/
