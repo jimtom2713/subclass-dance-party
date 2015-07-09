@@ -28,11 +28,13 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    dancers.push(dancer);
   });
 
   $(".lineUpButton").on("click", function(event){
     console.log('linepUp');
-    var height = $('body').height()*4 / 5;
+    debugger;
+    var height = $('body').height() / 2;
     var width =  $('body').width();
     var increment = width/dancers.length;
     var position = increment;
