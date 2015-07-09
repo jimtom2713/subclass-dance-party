@@ -1,4 +1,4 @@
-var SquareDancer = function(top, left, timeBetweenSteps){
+var BenderDancer = function(top, left, timeBetweenSteps){
 
   Dancer.call(this, top, left, timeBetweenSteps);
   this.styleSettings['border-radius'] = 0;
@@ -11,9 +11,9 @@ var SquareDancer = function(top, left, timeBetweenSteps){
   this.timeBetweenSteps = 10;
 };
 
-SquareDancer.prototype = Object.create(Dancer.prototype);
-SquareDancer.prototype.constructor = SquareDancer;
-SquareDancer.prototype.step = function(){
+BenderDancer.prototype = Object.create(Dancer.prototype);
+BenderDancer.prototype.constructor = BenderDancer;
+BenderDancer.prototype.step = function(){
   // debugger;
   Dancer.prototype.step.apply(this);
   if(this.direction === 'up'){
@@ -42,7 +42,7 @@ SquareDancer.prototype.step = function(){
   }
 }
 
-SquareDancer.prototype.lineUp = function(height, width){
+BenderDancer.prototype.lineUp = function(height, width){
   Dancer.prototype.lineUp.apply(this, arguments);
   this.initialTop = height;
   this.initialLeft = width;

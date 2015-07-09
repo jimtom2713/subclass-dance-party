@@ -23,7 +23,7 @@ $(document).ready(function(){
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
+      $("body").height() * Math.random() + 32,
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
@@ -32,8 +32,6 @@ $(document).ready(function(){
   });
 
   $(".lineUpButton").on("click", function(event){
-    console.log('linepUp');
-    debugger;
     var height = $('body').height() / 2;
     var width =  $('body').width();
     var increment = width/dancers.length;
