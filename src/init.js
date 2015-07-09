@@ -29,5 +29,17 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
   });
+
+  $(".lineUpButton").on("click", function(event){
+    console.log('linepUp');
+    var height = $('body').height()*4 / 5;
+    var width =  $('body').width();
+    var increment = width/dancers.length;
+    var position = increment;
+    for(var i=0; i< dancers.length;i++){
+      dancers[i].lineUp(height, position);
+      position += increment;
+    }
+  });
 });
 
