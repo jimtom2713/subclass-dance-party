@@ -46,7 +46,8 @@ $(document).ready(function(){
       var dancer = new ZoidbergDancer(
       $("body").height() * Math.random() + 32,
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 1000,
+      i/25
     );
     $('body').append(dancer.$node);
     dancers.push(dancer); 
